@@ -1,0 +1,86 @@
+\documentclass[14pt]{extarticle}
+
+%%%% paramètres généraux
+\input{Structure_fichier}
+
+%%%% quelques commandes
+\input{commandes}
+\input{chapitres}
+
+%%%% Définition En-tête et pied de page 
+%\usepackage{fancyhdr}
+%\pagestyle{fancy}
+%\setlength{\headsep}{0.3cm}
+%\setlength{\footskip}{0.8cm}
+%\renewcommand{\headrulewidth}{0pt}
+%\renewcommand{\footrulewidth}{0pt}
+
+%\fancyfoot[L]{Lycée Parc de Vilgénis, Massy-Palaiseau}
+%\fancyfoot[R]{\today}
+%\fancyhead[L]{\textit{\textcolor{blue!20!red}{\textbf{Cours Chimie}} - Seconde}}
+%\fancyhead[R]{\textit{Thème 1.1 - Chapitre 1}}
+
+%%%% Paramètres réglables
+% \modeCorrection
+\colorlet{couleurPrincipale}{cyanSombre}
+\colorlet{couleurImportant}{vertSombre}
+
+%%%% doc
+\begin{document}
+
+%% Programme selon le BO
+    %\input{Programme_BO}
+
+%% Révisions de seconde
+    \input{Revision/Revision_college}
+  %% Chapitre 1
+  \input{Cours/Chapitre_1}
+  % \input{chapitre1_solution/Mat1A_identification}
+  % \input{chapitre1_solution/Mat1A_CCM}
+  % \input{chapitre1_solution/Mat1B_dosage_dakin}
+  % \input{chapitre1_solution/Mat1B_dosage_identification}
+  
+  %% Chapitre 2
+  % \input{chapitre2_mecanique/Mouv1_referentiel}
+  % \input{chapitre2_mecanique/Mouv2_vitesse} % 2 séances
+  % \input{chapitre2_mecanique/Mouv3_modele_vitesse}
+  % \input{chapitre_mecanique2/Mouv4_forces} % 2 séances
+  % \input{chapitre2_mecanique/Mouv5_forces_inertie} % 3 séances
+  % \input{chapitre2_mecanique/Mouv6_forces_complexe}
+  % \input{chapitre2_mecanique/Mouv7_chute_goutte}
+  % \input{chapitre2_mecanique/Mouv8_syntheses.tex}
+
+  %% Chapitre 3
+  % \input{chapitre3_atome/Atom1_ordres_grandeurs}
+  % \input{chapitre3_atome/Atom2_taille_atome}
+  % \input{chapitre3_atome/Atom3_fabriquer_atome}
+  % \input{chapitre3_atome/Atom4_modele_atome}
+  % \input{chapitre3_atome/Atom5_cortege_electronique}
+  % \input{chapitre3_atome/Atom6_tableau_periodique}
+  % \input{chapitre3_atome/Atom7_duet_octet}
+  % \input{chapitre3_atome/Atom8_molecules}
+  % \input{chapitre3/Atom9_mole}
+  
+  %% Chapitre 4
+  % \input{chapitre4_lumiere/LumA1_onde_lumineuse}
+  % \input{chapitre4_lumiere/LumAE1_spectres}
+  % \input{chapitre4_lumiere/LumA2_spectres_neon}
+  % \input{chapitre4_lumiere/LumAE2_descartes}
+  % \input{chapitre4_lumiere/LumA3_modele_oeil}
+  % \input{chapitre4_lumiere/LumAE3_image}
+  % \input{chapitre4_lumiere/LumA4_exp_newton}
+  
+  %% Chapitre 5
+  %\input{chapitre5_transformations/TransAE1_changement_etat}
+  % \input{chapitre5_transformations/TransA1_transfert_energie}
+  % \input{chapitre5_transformations/TransA2_nucleaire}
+  
+  %% Chapitre 6
+  % \input{chapitre6_reaction_chimie/ChimAE1_dissolution_acido}
+  % \input{chapitre6_reaction_chimie/ChimA1_reaction_modelisation}
+  % \input{chapitre6_reaction_chimie/ChimA2_combustion}
+  % \input{chapitre6_reaction_chimie/ChimAE2_corrosion}
+  % \input{chapitre6_reaction_chimie/ChimA3_complexe}
+  %\input{chapitre6_reaction_chimie/ChimAE3_synthese_arome}
+  % \input{chapitre6_reaction_chimie/ChimA4_principe_synthese}
+\end{document}
