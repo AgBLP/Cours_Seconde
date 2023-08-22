@@ -7,6 +7,8 @@
 \definecolor{rougeSombre}{RGB}{148,  31,   0}
 \definecolor{rougeClair} {RGB}{224,  39,  34}
 \definecolor{couleurtitre}{RGB}{255,  255,  255}
+\definecolor{exef}{RGB}{240,240,240}
+\definecolor{propositiono}{RGB}{109,109,109}
 
 %%% quelques couleurs dérivées des couleurs choisie
 \newcommand{\couleurCorrection}{couleurPrincipale!60!black}
@@ -144,7 +146,7 @@
 \newcommand{\enTete}[2]{
   \pagestyle{fancy}
   \lhead{#1}
-  \chead{\textit{\footnotesize #1}} % central header
+  \chead{\textit{#2}} % central header
   \teteDroite{2023 - 2024}
 }
 %
@@ -954,5 +956,8 @@
 %%%% Commande pour les boîtes (def, titre, ...)
 
 \global\mdfdefinestyle{titr}{backgroundcolor=couleurtitre, shadow=false, linewidth=1pt, linecolor=red, shadowsize=5pt}
+
+\global\mdfdefinestyle{autreexo}{backgroundcolor=exef, shadow=false, linewidth=2pt, linecolor=propositiono, topline=false, rightline=false, bottomline=false}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
