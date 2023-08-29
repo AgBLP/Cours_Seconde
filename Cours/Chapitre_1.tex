@@ -10,88 +10,164 @@
 \begin{mdframed}[style=titr, leftmargin=60pt, rightmargin=60pt, innertopmargin=7pt, innerbottommargin=7pt, innerrightmargin=8pt, innerleftmargin=8pt]
 
 \begin{center}
-\large{\textbf{Chapitre 1 : Corps purs et mélanges au quotidien}}
+\large{\textbf{Chapitre 1 : Outils pour la Physique et la Chimie}}
 \end{center}
 
 \end{mdframed}
 \end{center}
-Ce chapitre permet de faire une description de la matière à l'échelle macroscopique (c'est-à-dire à notre échelle). Posons-nous les questions suivantes. Qu'est-ce qu'une espèce chimique ? Comment faire pour en identifier une en laboratoire ? Comment reconnaître un mélange d'une espèce chimique unique ?
-%
+Ce chapitre présente quelques rappels sur les outils mathématiques, les méthodes et les représentations que nous utiliserons toute l'année en physique comme en chimie. Il est donc essetiel de maîtriser ces notions pour démarrer l'année sur d'excellentes bases. N'hésitez pas à le reconsulter toute l'année au besoin !
+
 \begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black,title=Mots clés du chapitre :]
-Corps purs, mélange homogène/hétérogène, masse volumique, températures de changement d'état, solubilité.
+Puissance de $10$, unités SI, règles de sécurité en chimie
 \end{tcolorbox}
 
-%
+\section{Puissance de 10}
+\subsection{Représentation}
+Les nombres très grands ou très petits s'écrivent à l'aide des puissances de 10 :
+\begin{align*}
+    10^n &= \underbrace{10\times10\times ... \times 10}_{\text{\textbf{n} "10 $\times$"}} = 1\underbrace{00...0}_{\text{\textbf{n} zéros}} \\
+    10^{-n} &= \frac{1}{10^n} = 0,0....0\underbrace{1}_{\text{en \textbf{n-ième} position}}
+\end{align*}
 
-\section{Définitions}
+\underline{Exemples :} $10^9$ = \gap{...............................},    $10^{-5}$=\gap{......................}\\
 
-\subsection{Espèces chimiques}
+\subsection{Opérations}
+\begin{tcolorbox}[colback=red!5!white,colframe=red!75!black,title=\textbf{Règles de calculs des puissances de 10}]
+Soit $a$ et $b$ deux nombres réels.
+\begin{align*}
+    10^{a}\times 10^b &= 10^{a+b} \\
+    \frac{10^{a}}{10^b} &= 10^{a-b} \\
+\end{align*}
 
-La matière est constituée d'\textcolor{red}{entités chimiques} : les atomes, les molécules, les ions. \`{A} partir de ces entités, on peut définir une \textcolor{red}{espèce chimique} :
-\begin{tcolorbox}[colback=green!5!white,colframe=green!75!black,title=\textbf{Espèce chimique}, upperbox=invisible]
-Elle est composée d'un ensemble d'entités chimiques identiques. Une espèce chimique est caractérisée par :
+\end{tcolorbox}
+\underline{Effectuer les calculs suivants :}
+\begin{align*}
+    10^{30} \times 10^{50} &= \text{\gap{...............}} & \frac{10^{2033}}{10^{10}} &= \text{\gap{...............}} & \frac{10^2}{10^8}\times 10^5 &= \text{\gap{...............}}
+\end{align*}
+\subsection{Notation scientifique}
+
+\begin{tcolorbox}[colback=green!5!white,colframe=green!75!black,title=\textbf{Ecriture scientifique d'un nombre}, upperbox=invisible]
+En écriture scientifique, une valeur numérique s'exprime sous la forme :
+\begin{equation*}
+    a \times 10^n
+\end{equation*}
+avec $n$ un nombre entier relatif et $a$ un nombre décimal tel que : $1< a <10$.\\
+\\
+\end{tcolorbox}
+\underline{Exemples :}
 \begin{itemize}
-    \item sa formule chimique : par exemple \chemform{H_2O} pour l'eau,
-    \item son aspect : couleur, texture, forme, ...
-    \item ses propriétés physiques : température d'ébullition, masse volumique, indice de réfraction, ...
-    \item ses propriétés chimiques : réactivité avec d'autres espèces chimiques, ... 
-    \item 
-    \item
+    \item la masse $M_{L}$ de la Lune vaut $M_{Lune}=734$ $800$ $000$ $000$ $000$ $000$ $000$~kg et s'écrit donc plus simplement : $M_L=$\gap{....................}~kg
+    \item La taille $d$ d'une molécule d'eau est de  $d=0,000$ $000$ $003$ $4$~m, soit en écriture scientifique : $d=$\gap{......................}~m
 \end{itemize}
 
+\subsection{Ordre de grandeur}
+\begin{tcolorbox}
+[colback=green!5!white,colframe=green!75!black,title=\textbf{Ordre de grandeur d'un nombre}]
+L'ordre de grandeur d'un nombre et la puissance de 10 la plus proche de ce nombre.
 \end{tcolorbox}
-
-\begin{mdframed}[style=autreexo]
-\textbf{\bsc{Exercice de cours 1} - Espèces chimiques}\\
-Donner le type (\textit{atomique}, \textit{moléculaire} ou \textit{ionique}) des espèces chimiques suivantes : hélium (He), eau (H\textsubscript{2}O), chlorure de sodium (Na$^{+}$, Cl$^{-}$).
-\end{mdframed}
-
-On distingue alors les \textcolor{red}{corps purs} et les \textcolor{red}{mélanges}.
-
-\subsection{Les corps purs}
-\begin{tcolorbox}[colback=green!5!white,colframe=green!75!black,title=\textbf{Corps purs}]
-Un corps pur est constitué d'une unique espèce chimique.
-\end{tcolorbox}
-
-Les corps purs peuvent être :
-
+\underline{Exemples :}
 \begin{itemize}
-    \item \textcolor{red}{simples} : ils sont constitués d'un seul type d'atome. Exemples : le dihydrogène \chemform{H_2}, le carbone \chemform{C}, l'argent \chemform{Ag}.
-    \item \textcolor{red}{composés} : ils sont constitués de plusieurs atomes dans des proportions bien définies. Exemples : l'eau \chemform{H_2O}, l'éthanol \chemform{C_2H_6O}, le chlorure de sodium \chemform{(Na^+;Cl^-)}.
+    \item Ordre de grandeur de 30 000 = \gap{...........}
+    \item Ordre de grandeur de 0,000 007 = \gap{...........}
+    \item Ordre de grandeur de 8 700 000 = \gap{...........}
+    \item Ordre de grandeur de 0,000 256 = \gap{...........}
 \end{itemize}
 
-%%%%%%%%
-
-
-
-%
-\subsection{Le cas des mélanges}
-\begin{tcolorbox}[colback=green!5!white,colframe=green!75!black,title=\textbf{Mélange}]
-Un mélange est constitué de plusieurs espèces chimiques différentes.
-\end{tcolorbox}
-Les mélanges peuvent être :
-\begin{itemize}
-    \item \textcolor{red}{homogènes} : ils sont constitués d'une seule phase (solide, liquide ou vapeur) indiscernable à l'\oe il nu. Lorsque deux liquides se mélangent l'un avec l'autre, on dit qu'ils sont \textcolor{red}{miscibles}.
-    \item hétérogènes : 
-\end{itemize}
-\section{Identification d'espèces chimiques}
-Comment reconnaitre une espèce chimique par rapport à une autre ? 
-
-\subsection{Aspects physiques}
-Couleur, aspect, goût, état physique à température ambiante.
-\subsection{Propriétés physiques}
-\subsubsection{La masse volumique}
-Def+tableau de quelques masses volumiques connues avec photo.
-\subsubsection{Les températures de changement d'état}
-
-\begin{figure}[!htb]
+\section{Unités}
+\subsection{Les unités du système international SI}
+Depuis 2019, la communauté scientifique internationale, à travers la "Conférence générale des poids et mesures", a adopté un système d'unités universel. Leur valeur sont définies à partir de 7 constantes universelles dont les valeurs exactes ont été définitivement "fixées" en Novembre 2018 (\textit{source Wikipédia}). 
+\begin{figure}[!h]
+    \centering\includegraphics[scale=0.4]{Cours/SI_Logo_with_defining_constants.png}
+    \caption{Logo du système SI. }
+    \label{fig:Syteme_SI}
+\end{figure}
+\begin{table}[!h]
     \centering
-    \includegraphics[scale=0.5]{Cours/Changement_etat.png}
-    \caption{Les changements d'états de la matière}
+    \begin{tabularx}{\textwidth}{| X | X | c | X |}  \hline
+Grandeur physique & Unité SI & Symbole de l'unité & Appareil de mesure \\
+\hline
+Masse & kilogramme & kg & balance \\
+Temps & seconde & s & Chronomètre \\
+Longueur & mètre & m & règle \\
+Température & kelvin & K & thermomètre \\
+Intensité électrique & ampère & A & ampèremètre \\
+Quantité de matière & mole & mol & balance\\
+Intensité lumineuse & candela & cd & Luxmètre \\
+\hline
+\end{tabularx}
+    \caption{Tableau des unités du SI et}
+    \label{tab:SI}
+\end{table}
+\importantbox{Nous utilisons courament d'autres unités qui nous paraissent bien plus pratiques dans leur utilisation. Par exemple, nous utilisons plus facilement les degrés celsius $^\circ$C pour la température ou encore les tailles XS, S, M, L, ... pour les vêtements (même si la relation entre ces dernières \og unités \fg et les unités du SI semble très obscure...).}
+
+
+\subsection{Préfixes des unités.}
+Il est très souvent utile et agréable de remplacer l’écriture scientifique d’un nombre par \textbf{un nombre écrit sans puissance de 10 suivi d'un multiple ou sous-multiple de l'unité du nombre}.
+\begin{table}[!h]
+    \centering
+    \begin{tabularx}{\linewidth}{|c|c|c|c|}
+    \hline
+    Multiple ou sous-multiple & Facteur par lequel l'unité est multipliée & Préfixe & Symbole \\ 
+    \hline 
+    Multiple & 1 000 000 000 000 = $10^{12}$ & téra & T \\
+    \hline
+    Multiple & 1 000 000 000 = $10^{9}$ &  & \\
+    \hline
+    Multiple & 1 000 000 = $10^{6}$ &  &  \\
+    \hline
+    Multiple & 1 000 = $10^{3}$ &  & \\
+    \hline
+    Multiple & 100 = $10^{2}$ &  &  \\
+    \hline
+    Multiple & 10 = $10^{1}$ &  &  \\
+    \hline
+    Sous-Multiple & 0,1 = $10^{-1}$ &  & \\
+    \hline
+    Sous-Multiple & 0, 01 = $10^{-2}$ &  & \\
+    \hline
+    Sous-Multiple & 0, 001 = $10^{-3}$ &  & \\
+    \hline
+    Sous-Multiple & 0, 000 001 = $10^{-6}$ & &  \\
+    \hline
+    Sous-Multiple & 0, 000 000 001 = $10^{-9}$ &  & \\
+    \hline
+    Sous-Multiple & 0, 000 000 000 001 = $10^{-12}$ &  & \\
+    \hline
+    Sous-Multiple & 0, 000 000 000 000 001 = $10^{-15}$ &  & \\
+    \hline
+    \end{tabularx}
+    
+    \caption{Tableaux des préfixes des multiples et sous multiples}
+    \label{tab:chap1_multiples}
+\end{table}
+
+\section{Règles de sécurité en TP de chimie}
+\subsection{Les règles de sécurité}
+\begin{tcolorbox}[colback=red!5!white,colframe=red!75!black,title=\textbf{En TP de chimie :}]
+\vspace{10cm}
+\end{tcolorbox}
+
+\subsection{Les pictogrammes de sécurité et EPI}
+\begin{figure}[!h]
+    \centering
+    \includegraphics[scale=1]{Cours/Pictogrammes.png}
+    \caption{Pictogrammes de sécurité}
     \label{fig:enter-label}
 \end{figure}
-\subsubsection{La solubilité}
-Def + dépendance avec la température.
 
-\section{Composition d'un mélange}
-Définition miscibilité, homogènes, hétérogènes. Mettre photo huile+eau, sulfate de cuivre + eau.
+\begin{figure}[!h]
+    \centering
+    \includegraphics[scale=0.9]{Cours/picto_gant_blouse_lunette.jpg}
+    \caption{Logo des \'{E}quipements de Protection Individuelle (EPI)}
+    \label{fig:enter-label}
+\end{figure}
+
+\importantbox{Si vous avez un doute concernant un produit non étiquetté, il ne faut pas hésiter à regarder sa fiche toxicologique sur le site de l'INRS (Institut National de Recherche et de Sécurité) : \url{https://www.inrs.fr/publications/bdd/fichetox.html}}
+
+\underline{\textbf{Exemple :}}
+\begin{figure}[!h]
+    \centering
+    \includegraphics[scale=0.7]{Cours/Exemple_fiche_toxico.png}
+    \caption{Exemple d'une fiche toxicologique donnée par le site de l'INRS.}
+    \label{fig:enter-label}
+\end{figure}
