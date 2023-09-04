@@ -143,9 +143,16 @@
     \hfill \textbf{\footnotesize #1}
   }
 }
-\newcommand{\enTete}[2]{
+\newcommand{\enTeteChap}[2]{
   \pagestyle{fancy}
   \lhead{Chapitre #1 - \textit{#2}}
+  %\chead{} % central header
+  \teteDroite{Lycée Parc de Vilgénis 2023 - 2024}
+}
+
+\newcommand{\enTeteTP}[2]{
+  \pagestyle{fancy}
+  \lhead{TP #1 - \textit{#2}}
   %\chead{} % central header
   \teteDroite{Lycée Parc de Vilgénis 2023 - 2024}
 }

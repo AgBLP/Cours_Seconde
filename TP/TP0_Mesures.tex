@@ -1,0 +1,122 @@
+%\newpage
+%$ $
+%\newpage
+
+\renewcommand{\thesubsection}{\textcolor{red}{\Roman{section}.\arabic{subsection}}}
+\renewcommand{\thesubsubsection}{\textcolor{red}{\Roman{section}.\arabic{subsection}.\alph{subsubsection}}}
+
+\setcounter{section}{0}
+\sndEnTeteTPO
+
+\begin{center}
+\begin{mdframed}[style=titr, leftmargin=60pt, rightmargin=60pt, innertopmargin=7pt, innerbottommargin=7pt, innerrightmargin=8pt, innerleftmargin=8pt]
+
+\begin{center}
+\large{\textbf{TP 0: Des mesures en tout sens}}
+\end{center}
+
+\end{mdframed}
+\end{center}
+
+
+
+\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black,title=Objectifs de la séance :]
+\begin{itemize}
+    \item S'approprier du matériel de mesure
+    \item Appréhender les incertitudes d'une mesure
+    \item Travailler en groupe
+\end{itemize}
+\end{tcolorbox}
+
+Pour cette première séance de TP de l'année, nous allons manipuler quelques outils de mesures pour comprendre les sources d'incertitudes associées à ces mesures.
+
+\section{Mesure du temps}
+\begin{mdframed}[style=autreexo]
+\textbf{\bsc{Liste du matériel}}
+\begin{itemize}
+    \item un pendule pesant
+    \item un chronomètre
+\end{itemize}
+\end{mdframed}
+\begin{Large}{\textbf{Q :}} \end{Large} La période d'oscillation d'un pendule est définie comme le temps au bout duquel le pendule a fait un aller-retour. Selon vous, comment peut-on mesurer le plus précisément la période d'oscillation du pendule ? \\
+\newline
+\newline
+\underline{$1^{\text{ère}}$ méthode :} Lâcher le pendule d'une faible hauteur. Chaque élève mesure une période d'oscillation. \textbf{Comparer vos mesures entre vous et Commenter }:
+\vspace{8cm}
+
+\underline{$2^{\text{ème}}$ méthode :} Chaque binôme mesure 5 fois une période de manière indépendante. Notez les valeurs obtenues par binôme dans le tableau suivant :
+\\
+
+\begin{tabular}{|l|C{0.14}|C{0.14}|C{0.14}|C{0.14}|C{0.14}|C{0.14}|C{0.14}|C{0.14}|C{0.14}|C{0.14}|}
+\hline
+     Mesure n$^{\circ}$ & 1 & 2 & 3 & 4 & 5 \\
+     \hline
+     Période (en s) & & & & & \\
+     \hline
+\end{tabular}
+\newline
+\newline
+
+\begin{tcolorbox}[colback=blue!5!white,colframe=white!75!black,title=Document 1 :]
+La moyenne d'une mesure est la somme de toutes les valeurs mesurées divisée par le nombre de mesures effectuées :
+\begin{equation*}
+    \text{Moyenne} = \frac{\text{Mesure n$^{\circ}$1}+\text{Mesure n$^{\circ}$2} + ... + \text{Mesure n$^{\circ}$N}}{\text{N}}
+\end{equation*}
+L'écart-type représente la dispersion (c'est-à-dire à quel point les mesures changent d'une mesure à une autre) associée à une série d'une mesure. Elle est donnée par :
+\begin{equation*}
+    \text{Ecart-type }= \sqrt{\frac{\left(\text{Mesure n$^{\circ}$1}-\text{Moyenne}\right)^2+...+\left(\text{Mesure n$^{\circ}$N}-\text{Moyenne}\right)^2}{\text{N}}}
+\end{equation*}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=blue!5!white,colframe=white!75!black,title=Document 2 :]
+On représente le résultat d'une mesure selon la manière suivante :
+\begin{equation*}
+    \text{Résultat} = \text{Moyenne} \pm \text{incertitude-type}
+\end{equation*}
+\end{tcolorbox}
+\textbf{Travail à faire :} Calculer la moyenne notée $<T>$ de la période d'oscillation du pendule et évaluer qualitativement son incertitude-type. \underline{Pour les plus rapides :} calculer l'écart-type de vos mesures.
+
+\newpage
+
+\section{Mesure de la masse d'une bille de plomb}
+
+\begin{mdframed}[style=autreexo]
+\textbf{\bsc{Liste du matériel}}
+\begin{itemize}
+    \item 1 pied à coulisse
+    \item 1 règle
+    \item 1 balance
+\end{itemize}
+\end{mdframed}
+
+\begin{tcolorbox}[colback=blue!5!white,colframe=white!75!black,title=Document 3 :]La masse $m$ d'une bille de plomb est reliée à son rayon $R$ et à sa masse volumique $\rho$ par la formule suivante :
+\begin{equation*}
+    m = \frac{4\pi R^3\times\rho}{3}
+\end{equation*}
+\end{tcolorbox}
+
+\begin{Large}{\textbf{Q :}} \end{Large} Choisissez une bille e plomb, comment mesurer sa masse ? 
+\newline
+\newline
+
+\underline{$1^{\text{ère}}$ méthode :} Mesurer la masse à la balance. \textbf{Commenter :}
+\vspace{5cm}
+
+\underline{$1^{\text{ère}}$ méthode :} Mesurer le rayon de la bille. En déduire la masse à l'aide du Document 3. \textbf{Commenter :}
+
+
+\newpage
+
+\section*{Conclusion du TP}
+
+\begin{tcolorbox}[colback=red!5!white,colframe=red!75!black,title=\textbf{On retiendra : }]
+\begin{enumerate}
+    \item L'instrument de mesure et le protocole expérimental influent sur le résultat d'une mesure,
+    \item On écrit un résultat expérimental final en prenant en compte son incertitude :
+    \begin{equation*}
+        \text{Résultat} = \text{Moyenne} \pm \text{incertitude-type}
+    \end{equation*}
+    \item On peut améliorer la mesure d'une grandeur physique en la répétant plusieurs fois et en calculant sa moyenne,
+    \item On écrit un résultat en adaptant le nombre de chiffres significatifs.
+\end{enumerate}
+\end{tcolorbox}
