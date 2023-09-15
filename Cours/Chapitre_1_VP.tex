@@ -6,7 +6,7 @@
 \renewcommand{\thesubsubsection}{\textcolor{red}{\Roman{section}.\arabic{subsection}.\alph{subsubsection}}}
 
 \setcounter{section}{0}
-\sndEnTeteDeux
+\sndEnTeteCoursUn
 
 \begin{center}
 \begin{mdframed}[style=titr, leftmargin=60pt, rightmargin=60pt, innertopmargin=7pt, innerbottommargin=7pt, innerrightmargin=8pt, innerleftmargin=8pt]
@@ -209,3 +209,42 @@ Elle repose sur la différence d'affinité des espèces chimiques étudiées pou
         \item  \underline{Lecture verticale :} si un dépôt donne plusieurs tâches (comme c'est le cas sur la figure de gauche), alors il est constitué de plusieurs espèces chimiques : c’est un mélange.
     \end{itemize}
 \end{minipage}
+
+\section{Composition d'un mélange}
+On vient de voir dans la partie précédente comment identifier une ou plusieurs espèces chimiques en fonction de ses propriétés physico-chimiques. Mais comment donne-t'on la composition d'un mélange ? On introduit ici la proportion volumique et massique d'une espèce dans un mélange.
+
+\subsection{Proportion volumique et massique}
+
+\begin{tcolorbox}[colback=green!5!white,colframe=green!75!black,title=\textbf{Proportion volumique}]
+La proportion en volume (ou volumique) d'une espèce dans un mélange est le quotient du volume $V_{E}$ qu'occupe cette espèce par le volume total $V_{tot}$ du mélange :
+\begin{equation*}
+    \frac{V_E}{V_{tot}}
+\end{equation*}
+avec $V_{E}$ et $V_{tot}$ exprimées dans la même unité (L ou m$^3$ par exemple)
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=green!5!white,colframe=green!75!black,title=\textbf{Proportion massique}]
+La proportion en masse (ou massique) d'une espèce dans un mélange est le quotient de la masse $m_{E}$ de cette espèce dans le mélange par la masse totale $m_{tot}$ du mélange :
+\begin{equation*}
+    \frac{m_E}{m_{tot}}
+\end{equation*}
+avec $m_{E}$ et $m_{tot}$ exprimées dans la même unité (g ou kg par exemple).
+\end{tcolorbox}
+
+Ces proportions peuvent être exprimées en \% et sont sans unités puisqu'il s'agit d'un rapport en deux grandeurs sans unités.
+
+\subsection{Exemple à connaître : la composition de l'air}
+L'air est un mélange de gaz indispensable à la vie sur Terre. Quand il est sec, c'est-à-dire qu'il ne contient pas de vapeur d'eau, voici sa composition :
+\begin{figure}[!hbt]
+    \centering
+    \includegraphics[scale=0.5]{Images/Chapitre_1/Composition_air.png}
+    \caption{Diagramme de la composition de l'air}
+    \label{fig:compo_air}
+\end{figure}
+
+\begin{mdframed}[style=autreexo]
+\textbf{\bsc{Exercice de cours 5} - Proportion}\\
+A partir du diagramme présenté sur la figure, donnez le volume occupé par le diazote et le dioxygène pour un volume d'air total de $100$~L.
+\end{mdframed}
+\textit{Réponse :} Diazote : $V_{N_2}=78\%*100=78$~L. Dioxygène : $V_{O_2}=21\%*100=21$~L.
+

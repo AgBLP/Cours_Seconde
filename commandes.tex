@@ -7,7 +7,7 @@
 \definecolor{rougeSombre}{RGB}{148,  31,   0}
 \definecolor{rougeClair} {RGB}{224,  39,  34}
 \definecolor{couleurtitre}{RGB}{255,  255,  255}
-\definecolor{exef}{RGB}{240,240,240}
+\definecolor{exef}{RGB}{210,210,210}
 \definecolor{propositiono}{RGB}{109,109,109}
 
 %%% quelques couleurs dérivées des couleurs choisie
@@ -143,6 +143,23 @@
     \hfill \textbf{\footnotesize #1}
   }
 }
+
+%
+
+\newcommand{\enTeteRevision}[2]{
+  \pagestyle{fancy}
+  \lhead{Revision #1 - \textit{#2}}
+  %\chead{} % central header
+  \teteDroite{Lycée Parc de Vilgénis 2023 - 2024}
+}
+
+\newcommand{\enTeteMethodo}[1]{
+  \pagestyle{fancy}
+  \teteGauche{Fiche Méthode #1}
+  %\chead{} % central header
+  \teteDroite{Lycée Parc de Vilgénis 2023 - 2024}
+}
+
 \newcommand{\enTeteChap}[2]{
   \pagestyle{fancy}
   \lhead{Chapitre #1 - \textit{#2}}
@@ -157,6 +174,14 @@
   \teteDroite{Lycée Parc de Vilgénis 2023 - 2024}
 }
 %
+\newcommand{\enTeteSeance}[2]{
+  \pagestyle{fancy}
+  \lhead{Date : \textit{#1}}
+  \chead{Séance : #2}
+  \teteDroite{Seconde} % central header
+}
+%
+
 \newcommand{\enTeteFicheReussite}[1]{
   \newpage
   \setcounter{subsection}{0}
@@ -225,7 +250,7 @@
   \refstepcounter{exercice}
   \vspace*{2pt}
   \hspace{15pt}
-  \textcolor{\couleurExercice}{%couleurPrincipale!75!black}{
+  \textcolor{black}{%couleurPrincipale!75!black}{
     \textbf{\arabic{exercice}} {\small\faMinus}
   }
 }
