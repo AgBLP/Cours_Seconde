@@ -167,6 +167,20 @@
   \teteDroite{Lycée Parc de Vilgénis 2023 - 2024}
 }
 
+\newcommand{\enTeteAct}[3]{
+  \pagestyle{fancy}
+  \lhead{Chapitre #1 \newline Activité #2 - \textit{#3}}
+  %\chead{} % central header
+  \teteDroite{Lycée Parc de Vilgénis 2023 - 2024}
+}
+
+\newcommand{\enTeteDM}[2]{
+  \pagestyle{fancy}
+  \lhead{Devoir Maison n$\degree$ #1 - \textit{#2}}
+  %\chead{} % central header
+  \teteDroite{Lycée Parc de Vilgénis 2023 - 2024}
+}
+
 \newcommand{\enTeteTP}[2]{
   \pagestyle{fancy}
   \lhead{TP #1 - \textit{#2}}
@@ -259,13 +273,13 @@
 \newcommand{\reponseCorrigee}[1]{
   \vspace*{2pt}
   \hspace{16pt}
-  \textcolor{\couleurCorrection}{
+  \textcolor{red}{
     \faCaretRight \hspace{2pt} #1
   }
 }
 \newcommand{\correction}[1]{
   \ifthenelse {\boolean{modeProf}} { % prof
-    \textcolor{\couleurCorrection}{#1}
+    \textcolor{red}{#1}
   }{ % eleve
   }
 }
@@ -406,6 +420,12 @@
 }
 { \end{boite} }
 
+%\newenvironment{exo}[1]{
+%\begin{mdframed}[style=autreexo]
+%\textbf{\bsc{Exercice de cours 1} - Espèces chimiques}\\
+%Donner le type (\textit{atomique}, \textit{moléculaire} ou \textit{ionique}) des espèces chimiques suivantes : hélium (He), eau (H\textsubscript{2}O), chlorure de sodium (Na$^{+}$, Cl$^{-}$).
+%\end{mdframed}
+%}
 %% pour les référencer
 \newcommand{\docu}[1]{
   \textbf{(Doc. #1)}
@@ -414,9 +434,8 @@
 
 %%%% problematique
 \newcommand{\problematique}[1]{
-  \hspace{8pt}
-  \flecheLongue
-  \textbf{#1}
+  %\hspace{8pt}
+  \textcolor{red}{\begin{Large} \textbf{Q : }\end{Large}\textbf{#1}}
 }
 
 
@@ -582,7 +601,7 @@
 }
 %
 \newcommand{\flecheLongue}{
-  \textcolor{couleurPrincipale}{\faLongArrowRight}
+  \textcolor{red}{\longrightarrow}
 }
 %
 \newcommand{\ok}{
@@ -605,13 +624,8 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%% Passage important
-\newenvironment{encart}{
-  \begin{tcolorbox}
-  [boxrule = 0pt,
-  frame hidden, sharp corners,
-  colback = white!95!couleurPrincipale, % background color
-  breakable, enhanced jigsaw, % to break box over page
-  borderline west={4pt}{0pt}{couleurPrincipale}] % left bar
+\newenvironment{definition}[1]{
+  \begin{tcolorbox}[colback=green!5!white,colframe=green!75!black,title=\textbf{#1}]
   
 }
 {
@@ -638,7 +652,7 @@
 }
 %
 \newcommand{\important}[1]{
-  \!\textcolor{couleurImportant}{\textsf{\bfseries #1}}\!\!
+  \!\textcolor{green}{\textbf{\bfseries #1}}\!\!
 }
 %
 \newcommand{\exemple}{
