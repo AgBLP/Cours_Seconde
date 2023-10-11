@@ -339,9 +339,8 @@
 %%%% Espace pour indiquer nom, prénom et classe
 \newcommand{\nomPrenomClasse}{
   \vspace*{-24pt}
-  Nom : \lignePointillee{0.3}
-  Prénom : \lignePointillee{0.3}
-  Classe : \dotfill
+  \underline{Nom} : \lignePointillee{0.3}\hfill \underline{Date } : \gap{....}/\gap{....}/\gap{....} \newline 
+  \underline{Prénom} : \lignePointillee{0.3} \hfill\underline{Classe} : \gap{........}
 }
 
 
@@ -442,8 +441,9 @@
 %%%% problematique
 \newcommand{\problematique}[1]{
   %\hspace{8pt}
-  \textcolor{red}{\begin{Large} \textbf{Q : }\end{Large}\textbf{#1}}
-}
+  \noindent\textcolor{red}{\begin{large} \textbf{\underline{Problématique} : }\end{large}}\textbf{#1}
+  }
+
 
 
 %%%% objectifs
@@ -516,7 +516,7 @@
   \setlength{\extrarowheight}{6pt}
   \tabularx{\linewidth}{| c | X | c | c | c | c |}
     \hline
-    \rowcolor{gray!20}
+    \rowcolor{blue!25}
     \centering \textbf{Compétences} & \centering \textbf{Items} & \textbf{D} & \textbf{C} & \textbf{B} & \textbf{A}
     \\ \hline
 }
