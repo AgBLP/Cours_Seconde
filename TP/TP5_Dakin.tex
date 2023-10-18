@@ -1,3 +1,5 @@
+\modeCorrection
+
 %%%% début de la page
 
 \renewcommand{\thesubsection}{\textcolor{red}{\Roman{section}.\arabic{subsection}}}
@@ -5,157 +7,174 @@
 
 \setcounter{section}{0}
 \setcounter{document}{0}
-\sndEnTeteTPQuatre
+\sndEnTeteTPCinq
 
 \begin{center}
 \begin{mdframed}[style=titr, leftmargin=60pt, rightmargin=60pt, innertopmargin=7pt, innerbottommargin=7pt, innerrightmargin=8pt, innerleftmargin=8pt]
 
 \begin{center}
-\large{\textbf{TP 4 : Comment bien choisir la verrerie pour mesurer des volumes précis ?}}
+\large{\textbf{TP 5 : Estimation de la concentration d'une solution colorée à l'aide d'une échelle de teintes
+}}
 \end{center}
 
 
 \end{mdframed}
 \end{center}
 
-%\begin{tableauCompetences}
- %   ANA & Mesurer des volumes & & & &
-    
-%\end{tableauCompetences}
-
 %%%% objectifs
 \begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black,title=Objectifs de la séance :]
 \begin{itemize}
-    \item Mesurer des masses pour étudier la variabilité du volume mesuré par une pièce de verrerie
-  \item Choisir et utiliser la verrerie adaptée pour préparer une solution par dissolution
+    \item Réaliser une échelle de teintes
+    \item Choisir et utiliser la verrerie adaptée pour préparer une solution par dilution,
+    \item Encadrer la valeur d’une concentration en masse à l’aide d’une échelle de teinte.
+\end{itemize}
+\end{tcolorbox}
+
+%%%% Consignes
+\begin{tcolorbox}[colback=red!5!white,colframe=red!75!black,title= Consignes :]
+\begin{itemize}
+    \item Réaliser le travail en binôme,
+    \item Faire attention à la verrerie lors de son utilisation,
+    \item Respectez les consignes d'utilisation de la salle de chimie.
 \end{itemize}
 \end{tcolorbox}
 
 %%%% contexte
 
 \begin{tcolorbox}[colback=orange!5!white,colframe=orange!75!black,title= Scénario:]
-Le laboratoire dispose de trois principales pièces de verrerie qu'on utilise couramment lors de manipulation complexe. Nommer ces trois verreries.
-\begin{center}
-    \includegraphics[scale=0.7]{Images/TP4/Verrerie_a_completer.png}
-\end{center}
-\problematique{On souhaite vérifier que la fiole jaugée est la pièce de verrerie la plus précise et la plus fidèle. Comment fait-on ?}
-\end{tcolorbox}
+\begin{wrapfigure}{r}{0.5\textwidth}
+\vspace{-0.6cm}
+    \centering
+      \includegraphics[width=0.4\textwidth]{Images/TP5/Dakin.jpg}
+  \end{wrapfigure}
+L’eau de Dakin est une solution aqueuse de couleur rose pâle et à l’odeur d’eau de Javel, elle est utilisée pour le lavage de la peau et des muqueuses.\\
+C’est au cours de la première guerre mondiale que le chimiste américain Henri Dakin et le chirurgien français Alexis Carrel mettent au point cet antiseptique.\\
+L’eau de Dakin est à base d’hypochlorite de sodium \chemform{NaClO}, qui en est le principe actif, et de permanganate de potassium \chemform{KMnO_4}, qui lui donne sa coloration rose et qui permet de stabiliser la solution vis-à-vis de la lumière.\\
 
-\begin{tcolorbox}[colback=red!5!white,colframe=red!75!black,title= Consignes :]
-\begin{itemize}
-    \item Par binôme, nommer un responsable \og MES \fg : il aura la responsabilité de vérifier la bonne réalisation des mesures et de rentrer les valeurs expérimentales sur le fichier Excel du tableau. Nommer également un responsable \og COM \fg : il aura la responsabilité du compte-rendu et fera office de porte-parole du binôme,
-    \item Faire attention à la verrerie lors de son utilisation,
-    \item Respectez les consignes d'utilisation de la salle de chimie.
-\end{itemize}
-
+\problematique{Afin de s'assurer de la qualité de ce flacon, on souhaite estimer la concentration en masse de permanganate de potassium dans un flacon d’eau de Dakin. Comment fait-on ?}
 \end{tcolorbox}
+\newpage
+
 \begin{mdframed}[style=autreexo]
 \textbf{\bsc{Liste du matériel}}
 \begin{itemize}
-    \item une balance, 
-    \item un bécher de 100~mL,
-    \item une fiole jaugée de 25~mL,
-    \item une éprouvette graduée de 50~mL,
-    \item une pipette plastique,
+    \item une solution aqueuse $S_0$ de permanganate de potassium \chemform{KMnO_4} de concentration en masse $C_{m,0}=80$~mg.L$^{-1}$, 
     \item une pissette d'eau distillée,
-    \item un ordinateur avec le tableur Excel.    
+    \item des béchers,
+    \item des pipettes jaaugées de 1mL, 2mL, 5mL, 10mL et 20mL,
+    \item des fioles jaugées de 50mL,
+    \item des pipettes Pasteur en plastique,
+    \item des tubes à essais et leur support.    
 \end{itemize}
 \end{mdframed}
 
-\newpage
+
 %%%% documents
-\begin{doc}{Lecture d'un volume sur la verrerie}
-
-\begin{wrapfigure}{r}{0.3\textwidth}
-\vspace{-2cm}
-    \centering
-      \includegraphics[width=0.27\textwidth]{Images/Activite/Chap1/Lecture_Verrerie.png}
-  \end{wrapfigure}
-  Lorsqu'on verse un liquide dans une pièce de verrerie (éprouvette, tube à essai, etc), il se forme un ménisque qui va perturber la lecture du volume sur la verrerie. Pour lire le volume occupé par un liquide, il faut positionner son \oe il sur le bas du ménisque.
+\begin{doc}{La dilution}
+Le principe est de prélever un certain volume d'une solution concentrée initiale appelée \textcolor{red}{solution mère} puis d'y ajouter de l'eau pour obtenir une solution moins concentrée appelée \textcolor{red}{solution fille} :
+\begin{center}
+    \includegraphics[scale=0.59]{Images/TP5/Dilution2.png}
+\end{center}
+\begin{tcolorbox}[colback=red!5!white,colframe=red!75!black,title=\textbf{Propriété de la dilution : }]
+Au cours d'une dilution, la masse de soluté prélevée se conserve :
+\begin{empheq}[box=\fbox]{align*}
+    m_{\text{prélevée, mère}} &= m_{\text{soluté, fille}}\\
+    C_{m,\text{mère}}V_{\text{prélevé}} &= C_{m,fille}V_{\text{fille}}
+\end{empheq}
+On peut dès lors définir le \textcolor{red}{facteur de dilution}, noté $F$ de la manière suivante :
+\begin{equation*}
+    F=\frac{C_{m,\text{mère}}}{C_{m,fille}} = \frac{V_{\text{fille}}}{V_{\text{prélevé}}}
+\end{equation*}
+\end{tcolorbox}
 \end{doc}
-
-%%%%
-\begin{doc}{Concentration en soluté}
-  \label{doc:concentration}
-  \vspace*{-24pt}
-  \begin{tcolorbox}[colback=green!5!white,colframe=green!75!black,title=\textbf{Concentration massique}]
-    La \important{concentration massique}, notée $c$, mesure la quantité de soluté présent dans une solution.
-    C'est le rapport de la masse $m$ de \textbf{soluté} dissous dans le volume $V$ de la \textbf{solution}
-    \begin{equation*}
-      c = \frac{m_\text{soluté}}{V_\text{solution}}
-    \end{equation*}
-  \end{tcolorbox}
-  
-  \importantbox{Ne pas confondre \textbf{concentration massique} et \textbf{masse volumique} !
-  La concentration mesure la masse de soluté contenue dans une solution.
-  La masse volumique mesure la masse d'un échantillon contenue dans un volume donné.}
-\end{doc}
-
-
-%%%%
 \newpage
-\begin{doc}{Dakin}
-  \label{doc:dakin}
-  Le Dakin est une solution aqueuse d'hypochlorite de sodium \chemfig{Na ClO}.
-  Du permanganate de potassium \chemfig{K MnO_4} est ajouté à la solution, pour qu'elle ne soit pas dégradée par l'exposition au rayonnement UV du Soleil.
-  
-  \fleche Le constructeur indique que la concentration de \chemfig{KMnO_4} est de l'ordre de $0,\!01 \unit{g/L}$ dans le Dakin.
-\end{doc}
-
-
 %%%%
-\begin{doc}{Mesure de concentration}
-  \label{doc:dosage}
-  \vspace*{-24pt}
-  \begin{definition}{Dosage}
-    On parle de \important{dosage} quand on mesure la concentration d'une espèce chimique présente dans une solution.
-    
-    Un \important{dosage par étalonnage} consiste à déterminer la concentration d’une espèce chimique en comparant une grandeur physique caractéristique de la solution, à la même grandeur physique mesurée pour des solutions étalon.
-  \end{definition}
-  
- Une \textcolor{red}{\textbf{échelle de teinte} }permet de mesurer la concentration d'un soluté coloré. En effet, la teinte d'une solution est proportionnelle à la concentration en soluté.
-  En préparant une série de solutions de concentrations connues, une \textbf{gamme}, et en comparant les teintes, on va pouvoir encadrer la valeur de la concentration de la solution que l'on veut mesurer.
-  
-  \bigskip
-  
-  \importantbox{Il faut comparer les teintes avec des verreries identiques, la teinte s'assombrit avec l'épaisseur. \newline
-  La solution dont on veut mesurer la concentration doit avoir une teinte comprises dans la gamme réalisée !
-  }
-\end{doc}
- 
-
-%%%%
-\begin{doc}{Dilution d'une solution}
-  \label{doc:dilution}
-  \vspace*{-24pt}
-  \begin{definition}{Dilution}
-La \textcolor{green}{dilution} est la diminution de la concentration d'une solution par ajout de solvant, sans ajout de soluté. On dit que la solution est diluée.
-  \end{definition}
-  On parle de \textcolor{red}{\textbf{solution mère}} pour la solution de départ et de \textcolor{red}{\textbf{solution fille}} pour la solution obtenue.\\
-  Le \textcolor{red}{\textbf{facteur de dilution}}, noté F, est le rapport des concentrations des solutions mère et fille. Ce rapport est égal au volume de la solution fille sur le volume de la solution mère : 
-  \begin{equation*}
-    F = \frac{c_\text{mère}}{c_\text{fille}}
-      = \frac{V_\text{fille}}{V_\text{mère}}
-  \end{equation*}
-\end{doc}
-
-
-%%%%
-\begin{doc}{Protocole d'une dilution}
-  \label{doc:protocole_dilution}
-  \begin{center}
-    \image{1}{Images/TP4/Protocole_dilution.png}
+\begin{doc}{Protocole expérimental de préparation d'une solution aqueuse par dilution}
+\vspace{-0.8cm}
+\begin{center}
+    \includegraphics[scale=0.5]{Images/TP5/Protocole_dilution.png}
   \end{center}
   
   \begin{enumerate}
-    \item Prélever le volume $V_\text{mère}$ de la solution mère à l'aide de la pipette graduée.
+    \item Prélever un volume $V_\text{mère}$ de la solution mère à l'aide de la pipette jaugée.
     Le bas du ménisque doit atteindre la graduation supérieure.
     \item Introduire la solution prélevée dans la fiole jaugée de volume $V_\text{fille}$.
-    \item Ajouter de l'eau distillée dans la fiole jaugée jusqu'aux $2/3$ et agiter doucement. Compléter jusqu'à ce que le bas du ménisque atteigne le trait de jauge.
-    \item Fermer la fiole et l'agiter en la retournant plusieurs fois.
+    \item Ajouter de l'eau distillée dans la fiole jaugée jusqu'aux $2/3$ et agiter doucement. 
+    \item Ajouter goutte à goutte de l'eau distillée avec une pipette Pasteur jusqu'à ce que le bas du ménisque atteigne le trait de jauge (\textcolor{red}{vérifier à l'\oe il}),
+    \item Fermer la fiole avec un bouchon et l'agiter en la retournant plusieurs fois.
     \item Verser la solution fille obtenue dans un bécher.
-  \end{enumerate}
-
-Voici le lien d'une vidéo sur le protocole d'une dilution si vous souhaitez réviser \url{https://www.youtube.com/watch?v=8j7K-8SnzqQ}
+    \end{enumerate}
 \end{doc}
 
+
+%%%%
+\newpage
+\begin{doc}{\'{E}tiquette d'un flacon d'eau de Dakin commercial}
+\vspace{-0.4cm}
+  \label{doc:dakin}
+  \begin{center}
+      \begin{tabular}{|C{0.2}|C{0.25}|C{0.25}|c|}
+      \hline
+       & Soluté & Concentration en masse & Couleur\\
+       \hline 
+          Principe actif & Hypochlorite de sodium \chemform{NaClO} & 0,500~g de chlore actif pour 100~mL & Incolore (en solution)\\
+          \hline
+          \multirow{3}{*}{Principe non actifs} & Permanganate de potassium \chemform{KMnO_4} & 0,0010~g pour 100mL & Violet (en solution)\\
+           & Dihydrogénophosphate de sodium déshydraté & Non connue (excipient) & Blanc (solide) \\
+           & Eau purifiée & Non connue (excipient) & Incolore\\
+           \hline
+      \end{tabular}
+  \end{center}
+\end{doc}
+ 
+%%%%
+
+\begin{large}
+    \textbf{\textcolor{red}{\underline{Travail à réaliser :}}}
+\end{large}
+\\
+\question{Identifier le solvant de l'eau de Dakin et un soluté.}{L'eau de Dakin est une solution aqueuse. Par définition, l'eau est le solvant de cette solution.}{0}
+\question{Parmis les solutés de l'eau de Dakin, identifier son principe actif et l'espèce chimique responsable de sa couleur.}{D'après le document 3, le principe actif est l'ion hypochlorite de sodium \chemform{NaClO} et l'espèce responsable de la couleur est le permanganate de potassium \chemform{KMnO_4}}{0}
+\\
+\question{Compléter le document 1 sur la propriété de la dilution.}{Voir le document 1.}{0}
+\\
+\question{On souhaite préparer quatre solutions, notées S$_{1}$, S$_{2}$, S$_{3}$ et S$_{4}$ à partir de la solution aqueuse S$_{0}$ de permanganate de potassium de concentration en masse $C_{m,0}=80$~mg.L$^{-1}$. Compléter le tableau ci-dessous \textbf{\underline{après avoir détaillé le calcul pour la solution S$_{1}$}} :
+\begin{center}
+    \begin{tabular}{|c|c|c|c|c|}
+        \hline
+        Solution fille & V$_{\text{mère à prélever}}$ (en mL) & V$_{\text{fille}}$ (en mL) & $C_{m,fille}$ (en mg.L$^{-1}$) & Facteur de dilution $F$\\
+        \hline
+         S$_{1}$ & 1  & 50,0  & 1,6 & 50 \\
+         \hline
+         S$_{2}$ & 2 & 50,0  & 3,2 & 25 \\
+         \hline
+         S$_{3}$ & 5 & 50,0  & 8,0 & 10 \\
+         \hline
+         S$_{4}$ & 10  & 50,0  & 16 & 5 \\
+         \hline
+         \textit{(Bonus)} S$_{5}$ & 15 & 50,0 & 24 & environ 3 \\
+         \hline
+         \textit{(Bonus)} S$_{6}$ & 20 & 50,0 & 32 & 2,5\\
+         \hline
+    \end{tabular}
+\end{center}
+}{}{0}\\
+\question{En suivant le protocole du document 2 (et les explications du professeur), préparer les solutions S$_{1}$, S$_{2}$, S$_{3}$ et S$_{4}$.}{Fait en TP.}{0}
+\\
+\question{\`{A} votre avis, comment feriez-vous pour déterminer la concentration de la solution mère commerciale ?}{Il y a deux possibilités : 
+\begin{itemize}
+    \item Comme on sait que la solution est colorée et que la couleur provient des ions permanganates, on peut réaliser une échelle de teinte avec différentes concentrations en masse $C_m$ d'ions permanganates et comparer la teinte à celle de la solution commerciale (c'est ce qu'on va faire ici),
+    \item mesurer la masse volumique de chaque solution fille et réaliser une courbe d'étalonnage (c'est ce qu'on fera au TP 6).
+\end{itemize}}{0}
+
+\question{Remplir sur quelques centimètres les tubes à essais avec vos solutions filles. Attention à se rappeler la correspondance entre la solution dans le tube à essai et la solution $S$ correspondante.}{Effectué en TP.}{0}
+\\
+\question{Puis, déterminer \textbf{\underline{un encadrement}} de la concentration en masse en permanganate de potassium de la solution d'eau de Dakin commerciale.}{On trouve à l'aide de l'échelle de teintes réalisées : $8~\text{mg.L}^{-1}<C_{m,Dakin} < 16~\text{mg.L}^{-1}$}{0}
+\\
+\question{\`{A} partir des données de l'étiquette de la solution commerciale, calculer la concentration en masse de permanganate de potassium normalement présente dans la solution commerciale.}{Les données de l'étiquette donnent une concentration en masse égale à $C_{m,Dakin}=\frac{0,0010~\text{g}}{100~\text{mL}}=\frac{1,0~\text{mg}}{0,1~\text{L}}=10~\text{mg.L}^{-1}$}{0}
+\\
+\question{Vos résultats expérimentaux sont-ils en accord avec cette concentration en masse ? }{Oui, l'encadrement donne une concentration en masse de permanganate dans la solution de Dakin entre 8 et 16~mg.L$^{-1}$. Cet encadrement contient bien la valeur de $C_{m,Dakin}=10~\text{mg.L}^{-1}$.}{0}
+
+\begin{center}
+    \includegraphics[scale=0.9]{Images/Feuilles/Grands_carreaux.pdf}
+\end{center}
