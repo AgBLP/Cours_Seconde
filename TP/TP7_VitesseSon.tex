@@ -1,4 +1,4 @@
-%\modeCorrection
+\modeCorrection
 
 %%%% début de la page
 \renewcommand{\thesection}{\textcolor{red}{Partie \Roman{section} -}}
@@ -118,11 +118,22 @@ Le graphe ci-dessous représente la vitesse de propagation du son dans l'air en 
 
 \question{Proposer un protocole expérimental pour mesurer la vitesse du son dans l'air.}{On a deux possibilités qui sont réalisables en pratiques :
 \begin{enumerate}
-    \item On place deux smartphones d'une distance $d$. Une personne du binôme se met proche du premier smartphone et fait un premier \og clap \fg~ qui déclanche le chronomètre des deux smartphone (avec un petit décalage correspondant au temps de propagation du son entre les deux smartphones). L'autre personne du binôme peut ensuite faire un autre \og clap \fg~ pour arrêter les chronomètres (toujours avec le même décalage).
-    \item On place deux smartphones d'une distance $d$. Une personne du binôme se met proche du premier smartphone et fait un premier \og clap \fg~ qui déclanche le chronomètre des deux smartphone (avec un petit décalage correspondant au temps de propagation du son entre les deux smartphones). L'autre personne rapproche un smartphone de l'autre sans arrêter le chronomètre puis fait un \og clap \fg~ pour arrêter simultanément les deux smartphones.
-\end{enumerate}}{0}
+    \item On place deux smartphones d'une distance $d$ suffisamment grande pour diminuer l'incertitude sur la mesure (chronomètre précis à 0,001s) et suffisamment proche pour que le son produit prêt d'un téléphone puisse être capté par l'autre téléphone ;
+    \item On règle la valeur du seuil sur l'application Phyphox pour que le bruit ambiant ne déclanche pas les chronomètres sur les téléphones ;
+    \item Une personne du binôme se met proche du premier smartphone et fait un premier \og clap \fg~ qui déclanche le chronomètre des deux smartphones (avec un petit décalage correspondant au temps de propagation du son entre les deux smartphones) ;
+    \item L'autre personne du binôme peut ensuite faire un autre \og clap \fg~ pour arrêter les chronomètres (toujours avec le même décalage temporel) ;
+    \end{enumerate}
+    On aurait également pu changer la troisième et quatrième étape du protocole précédent en : 
+    \begin{enumerate}
+    \setcounter{enumi}{2}
+        \item  Une personne du binôme se met proche du premier smartphone et fait un premier \og clap \fg~ qui déclanche le chronomètre des deux smartphones (avec un petit décalage correspondant au temps de propagation du son entre les deux smartphones) ;
+        \item  L'autre personne rapproche un smartphone de l'autre sans arrêter le chronomètre puis fait un \og clap \fg~ pour arrêter simultanément les deux smartphones. 
+    \end{enumerate}}{0}
 %\\
-\question{Faire un schéma de votre expérience, le légender et faire apparaître toutes les grandeurs physiques pertinentes : $t_{1}$ le temps mesuré par le premier smartphone, $t_{2}$ le temps mesuré par le second smartphone et $d$ la distance entre les deux smartphones.}{Faire le schéma.}{0} 
+\question{Faire un schéma de votre expérience, le légender et faire apparaître toutes les grandeurs physiques pertinentes : $t_{1}$ le temps mesuré par le premier smartphone, $t_{2}$ le temps mesuré par le second smartphone et $d$ la distance entre les deux smartphones.}{Merci à Lucie Keller de la 209 !\\
+\begin{center}
+    \includegraphics[scale=0.5]{Images/TP/TP7/Schema_experience.png}
+\end{center}}{0} 
 %\\
 \question{Déterminer l'expression de la vitesse du son dans l'air, notée $c_{air}$ en fonction de $t_1$, $t_2$ et $d$.}{Le temps de parcours du son dans l'air dans l'expérience est la différence des temps mesurés par les smartphones, soit $\Delta t=t_1-t_2$. On a deux possibilités suivant l'expérience qu'on met en place :
 \begin{enumerate}
@@ -149,18 +160,37 @@ Le graphe ci-dessous représente la vitesse de propagation du son dans l'air en 
          $c_{air}$ (en m.s$^{-1}$) & & & \\
          \hline 
     \end{tabular}
-\end{center}}{~}{0}
+\end{center}}{On mesure $d=2,11$~m.\begin{center}
+    \begin{tabular}{|c|C{0.25}|C{0.25}|C{0.25}|}
+    \hline
+         Mesures & n$^{\circ}$1 & n$^{\circ}$2 & n$^{\circ}$3 \\
+         \hline
+         $t_1$ (en s) & 1,175 & 0,753 & 0,977 \\
+         \hline
+         $t_2$ (en s) & 1,164 & 0,741 & 0,967 \\
+         \hline
+         $c_{air}$ (en m.s$^{-1}$) & $\frac{2\times2,11}{1,175-1,164}=384$ & 325 & 422 \\
+         \hline 
+    \end{tabular}
+\end{center}}{0}
 %\\
 \question{Estimer l'incertitude-type de vos mesures. \'{E}crire votre résultat expérimental sous la forme suivante :
 \begin{empheq}[box=\fbox]{equation*}
     c_{air} = \text{Valeur moyenne} \pm \text{incertitude-type}
-\end{empheq}}{~}{0}
+\end{empheq}}{On peut prendre par exemple l'écart entre la valeur moyenne et la valeur la plus éloignée comme incertitude. La valeur moyenne est $\frac{384+325+422}{3}=377$~m.s$^{-1}$. L'incertitude sur $c_{air}= u(c_{air})=377-325=52$~m.s$^{-1}$. On écrit donc le résultat de notre mesure :
+\begin{empheq}[box=\fbox]{equation*}
+    c_{air} = 377 \pm 52~\text{m.s$^{-1}$}
+\end{empheq}}{0}
 %\\
 \question{Déterminer avec le graphique du document 2 la vitesse théorique du son dans la salle de TP. \textbf{Faire apparaître la construction graphique sur la figure.}}{\begin{center}
     \includegraphics[scale=0.5]{Images/TP/TP7/Vitesse_son_salleTP.png}
 \end{center}}{0}
 %\\
-\question{Votre mesure expérimentale de la vitesse de propagation du son est-elle compatible avec la valeur théorique ?}{~}{0}
+\question{Votre mesure expérimentale de la vitesse de propagation du son est-elle compatible avec la valeur théorique ?}{Nos mesures nous permettent de donner un encadrement de la valeur de la vitesse du son dans l'air :
+\begin{equation*}
+    377-52=325\text{m.s$^{-1}$} < c_{air} < 377+52=429~\text{m.s$^{-1}$}
+\end{equation*}
+La valeur théorique \underline{est contenue} dans cette intervalle. On peut donc conclure que nos résultats sont compatibles avec la valeur théorique.}{0}
 %\\
 \question{\textit{(Bonus)} Un observateur observe un orage. L'air est lourd, le thermomètre affiche $T=25\degreCelsius$. Soudain, il voit le ciel s'éclairer et un éclair tomber. Il déclanche alors un chronomètre et mesure $\Delta t = 5,04$~s au moment où il entend le tonnerre gronder. \`{A} quelle distance de l'observateur se situe l'éclair qui vient de tomber  ?}{Comme la vitesse du son dans l'air à la température $T=25\degreCelsius$ est égale à $c(T=T=25\degreCelsius)=347$~m.s$^{-1}$, on en déduit la distance $d$ entre l'observateur et l'éclair : 
 \begin{equation*}
@@ -194,21 +224,24 @@ où \og $\pm$ \fg~signifie plus ou moins.\\
 \begin{large}
     \textbf{\textcolor{red}{\underline{Travail à réaliser :}}}
 \end{large}
-%\\
+\\
 \question{Récupérer le fichier \og TP7\_Resultats.xlsx \fg~dans le dossier de votre classe sur l'ENT dans l'application \og Espace Documentaire \fg. }{~}{0}
-%\\
+\\
 \question{Rassembler tous les résultats de votre groupe dans le fichier.}{~}{0}
+\\
+\question{Calculer la valeur moyenne, l'écart-type ainsi que l'incertitude-type (à l'aide du document 3) à l'aide des fonctions MOYENNE, ECART-TYPE du tableur Excel.}{Voir le fichier \textit{TP7\_ResultatsGlobaux\_Classe}.}{0}
+\\
+\question{En utilisant le document 4, donner le résultat de la mesure statistique de $c_{air}$.}{On lit directement dans le fichier :
+\begin{empheq}[box=\fbox]{equation*}
+    c_{air} = 370\pm8~\text{m.s$^{-1}$}
+\end{empheq}}{0}
 %\\
-\question{Calculer la valeur moyenne, l'écart-type ainsi que l'incertitude-type (à l'aide du document 3) à l'aide des fonctions MOYENNE, ECART-TYPE du tableur Excel.}{~}{0}
-%\\
-\question{En utilisant le document 4, donner le résultat de la mesure statistique de $c_{air}$.}{~}{0}
-%\\
-\question{Pourquoi l'incertitude-type que vous avez estimée dans la Partie 1 est-elle plus grande que celle que vous avez obtenue par l'approche statistique ?}{D'après le document 3, plus le nombre de mesures N augmente plus l'incertitude-type diminue. Il est donc normal de trouver une incertitude estimée à la partie 1 plus grande que celle obtenue dans cette partie par une approche statistique (à part si on a fait des mesures incroyablement reproductibles).}{0}
-%\\
+\question{Pourquoi l'incertitude-type que vous avez estimée dans la Partie 1 est-elle plus grande que celle que vous avez obtenue par l'approche statistique ?}{D'après le document 3, plus le nombre de mesures N augmente plus l'incertitude-type diminue. Il est donc normal de trouver une incertitude estimée à la partie 1 plus grande que celle obtenue dans cette partie par une approche statistique (à part si on a fait des mesures incroyablement reproductibles mais qui sont difficilement interprétable statistiquement).}{0}
+\\
 \question{Le résultat du groupe est-il compatible avec la valeur théorique ? Proposer des explications possible sur la différence entre les deux.}{Explications plausibles :
 \begin{itemize}
     \item Trop faible distance entre les deux téléphones, cela augmente l'erreur de mesure ;
-    \item Le chronomètre sonore s'est déclanché à cause d'un bruit extérieur, la mesure peut-être faussée (en générale, cela se voit bien sur l'histogramme) ;
+    \item Le chronomètre sonore s'est déclanché à cause d'un bruit extérieur, la mesure peut-être faussée (en générale, cela se voit bien sur le graphe des mesures de la classe) ;
     \item La précision du chronomètre sur le téléphone est trop faible (une variation de 1ms pour une distance de 5m entre les deux téléphones donne une variation de $23$~m.s$^{-1}$ sur la vitesse de propagation du son ;
     \item Une mauvaise mesure de la distance entre les téléphones ;
 \end{itemize}}{0}
