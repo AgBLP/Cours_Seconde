@@ -1,4 +1,4 @@
-%\modeCorrection
+\modeCorrection
 
 %%%% début de la page
 \renewcommand{\thesection}{\textcolor{red}{Partie \Roman{section} -}}
@@ -140,11 +140,17 @@ Elle s'exprime en Hz (Hertz) ou s$^{-1}$.
 \end{large}
 \\
 \vspace{-0.3cm}
-\question{\`{A} l'aide du document 3, enregistrer un signal sonore émis par le diapason. Visualiser le signal obtenu en zoomant sur l'écran si nécessaire.}{~}{0}
+\question{\`{A} l'aide du document 3, enregistrer un signal sonore émis par le diapason. Visualiser le signal obtenu en zoomant sur l'écran si nécessaire.}{Voici le signal obtenu :
+\begin{center}
+    \includegraphics[scale=0.4]{Images/TP/TP8/Signal_Diapason.PNG}
+\end{center}}{0}
 %\\
-\question{Enregistrez une capture d'écran du signal, imprimez la et collez-la sur votre compte rendu.}{~}{0} 
-%\\
-\question{\`{A} l'aide du document 2, le signal obtenu est-il périodique ? Représenter une période sur le signal que vous avez imprimé.}{~}{0}
+\question{Enregistrez une capture d'écran du signal, imprimez la et collez-la sur votre compte rendu.}{Voir ci-dessus.}{0} 
+\\
+\question{\`{A} l'aide du document 2, le signal obtenu est-il périodique ? Représenter une période sur le signal que vous avez imprimé.}{Le signal se reproduit au cours du temps. Il est donc bien périodique. On peut représenter la période sur le signal obtenu de diverses façons :
+\begin{center}
+    \includegraphics[scale=0.55]{Images/TP/TP8/Signal_Diapason_periode.png}
+\end{center}}{0}
 %\\
 \renewcommand{\arraystretch}{0.8}
 \question{\`{A} l'aide des curseurs sur le logiciel Audacity, compléter le tableau suivant :
@@ -160,11 +166,23 @@ Elle s'exprime en Hz (Hertz) ou s$^{-1}$.
     Fréquence (en Hz) & & & & \\
     \hline
 \end{tabular}
-\end{center}}{~}{0}
+\end{center}}{\begin{center}
+\begin{tabular}{|c|C{0.1}|C{0.15}|C{0.15}|C{0.2}|}
+    \hline
+    Nombre de période & 1 & 5 & 10 & 20 \\
+    \hline
+    Durée totale (en s) & 0,002 & 0,011 & 0,023 & 0,045 \\
+    \hline
+     Période T mesurée (en s) & 0,002 & $0,0022 = \frac{0,011}{5}$ & $0,0023 = \frac{0,023}{10}$ & $0,00225 = \frac{0,045}{20}$ \\
+    \hline
+    Fréquence (en Hz) & 500 & 455 & 434,5 & 444,4 \\
+    \hline
+\end{tabular}
+\end{center}}{0}
 %\\
-\question{En déduire la méthode à utiliser pour mesurer une période de façon précise.}{Il faut mesurer le temps entre plusieurs périodes et ensuite diviser le résultat par le nombre de périodes. Cela donne une mesure pour la période plus précise.}{0}
+\question{En déduire la méthode à utiliser pour mesurer une période de façon précise.}{Il faut mesurer le temps entre le plus grand nombre de périodes possible et ensuite diviser le résultat par le nombre de périodes. On divise l'incertitude-type par le nombre de période mesurée.}{0}
 %\\
-\question{La fréquence que vous avez mesurée correspond t-elle à celle donnée sur le diapason ?}{Oui, lorsqu'on prend 20 périodes, on obtient une mesure assez précise de la fréquence qui est celle (ou très proche) du diapason.}{0}
+\question{La fréquence que vous avez mesurée correspond t-elle à celle donnée sur le diapason ?}{Oui en tout cas du même ordre de grandeur. On remarque que lorsqu'on mesure 20 périodes, on obtient une mesure assez précise de la fréquence qui est très proche de celle du diapason.}{0}
 
 \section{Accorder d'une guitare}
 
@@ -184,12 +202,28 @@ Elle s'exprime en Hz (Hertz) ou s$^{-1}$.
     \textbf{\textcolor{red}{\underline{Travail à réaliser :}}}
 \end{large}
 \\
-\question{Comparer l'épaisseur de la corde de guitare et la \textcolor{red}{hauteur} (aigüe ou grave) de la note obtenue en la faisant vibrer.}{Plus l'épaisseur de la corde est importante, plus la note est grave.}{0}
+\question{Comparer l'épaisseur de la corde de guitare et la \textcolor{red}{hauteur} (aigüe ou grave) de la note obtenue en la faisant vibrer.}{Plus l'épaisseur de la corde est importante, plus la note est grave. On aurait pu faire le même travail avec la nature du matériau qui compose la corde : plus le matériau est dense, plus la note est grave. On aurait pu faire également le lien entre la longueur ou la tension de la corde avec la hauteur de la note : plus la longueur de la corde est courte ou plus la tension de la corde est élevée, plus la note est aigüe.}{0}
+\\
+\question{Afin de comparer leur fréquence, enregistrer et imprimer un son grave et un son aigu sur une durée totale de 100~ms. Vous imprimerez puis collerez vos signaux sonores sur votre compte-rendu. \textbf{N'oubliez pas d'annoter vos signaux pour ne pas les confondre !}}{Voici pour le son grave :
+\begin{center}
+    \includegraphics[scale=0.4]{Images/TP/TP8/Guitare_grave.PNG}
+\end{center}
+Voici pour le son aigu :
+\begin{center}
+    \includegraphics[scale=0.4]{Images/TP/TP8/Guitare_aigu.PNG}
+\end{center}}{0}
 %\\
-\question{Afin de comparer leur fréquence, enregistrer et imprimer un son grave et un son aïgu sur une durée totale de 100~ms. Vous imprimerez puis collerez vos signaux sonores sur votre compte-rendu. \textbf{N'oubliez pas d'annoter vos signaux pour ne pas les confondre !}}{~}{0}
-%\\
-\question{Comparer les deux signaux entre eux (période et fréquence).}{Le son le plus grave à la fréquence la plus basse. Le son le plus aigu a la fréquence la plus grande.}{0}
-%\\
-\question{D’après le document, quelle est la relation de fréquence entre 2 notes séparées d’une octave ?}{La fréquence entre 2 notes séparées d'une octave est $524-262=262$~Hz.}{0}
-\question{\textbf{\underline{Pour les guitare-héros}}, accorder la deuxième corde la plus grave de la guitare pour obtenir la note La3 du diapason. Noter le protocole expérimental que vous mettez en place.}{~}{0}
+\question{Comparer les deux signaux entre eux (période et fréquence).}{On remarque que les deux signaux sont périodique et que la période du son aigu est plus grande que celle du son grave :
+\begin{equation*}
+    T_{\text{grave}}>T_{\text{aigu}}
+\end{equation*}
+Or $f=\frac{1}{T}$ donc :
+\begin{equation*}
+    f_{\text{grave}}<f_{\text{aigu}}
+\end{equation*}
+\underline{Plus un son est aigu, plus sa fréquence est élevée !}}{0}
+\\
+\question{D’après le document, quelle est la relation de fréquence entre 2 notes séparées d’une octave ?}{La relation de fréquence entre 2 notes séparées que la fréquence de la note d'une octave au-dessus est deux fois plus grande que celle du dessous : ainsi un DO3 bat à $f=262$~Hz et un Do4 bat à $f=2\times262=524$~Hz.}{0}
+\\
+\question{\textbf{\underline{Pour les guitare-héros}}, accorder la deuxième corde la plus grave de la guitare pour obtenir la note La3 du diapason. Noter le protocole expérimental que vous mettez en place.}{On peut par exemple comparer à l'oreille le son émis par le diapason et celui émis par la corde guitare et les faisant vivrer simultanément. On tend ou on détend alors la corde pour choisir un son plus ou moins aigu se rapprochant de celui du diapason. On peut alors enregistrer les signaux du diapason et de la corde de guitare et vérifier avec le logiciel Audacity si les périodes sont les mêmes. C'est ce que fait exactement et automatiquement un métronome numérique (mais c'est trop facile...).}{0}
 %\\
