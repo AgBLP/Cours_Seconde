@@ -18,6 +18,7 @@
 \usepackage{fancyhdr} % headers
 \usepackage{enumitem} % for bullet in itemize
 \usepackage[colorlinks=true,linkcolor=black,citecolor=black,filecolor=black,urlcolor=black]{hyperref} % for link
+\usepackage[backend=biber,style=alphabetic,sorting=ynt]{biblatex}
 \usepackage{accents} % for complex notation
 \usepackage[european, straightvoltages, RPvoltages]{circuitikz} % for electronic circuit
 
@@ -105,3 +106,7 @@
   gap-widen,
   gap-extend-percent
 }
+
+
+%\bibliographystyle{plain}
+\bibliography{TSNR/TSNR.bib}

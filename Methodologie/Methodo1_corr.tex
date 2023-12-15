@@ -29,7 +29,7 @@ Les nombres très grands ou très petits s'écrivent à l'aide des puissances de
     10^{-n} &= \frac{1}{10^n} = 0,0....0\underbrace{1}_{\text{en \textbf{n-ième} position}}
 \end{align*}
 
-\underline{Exemples :} $10^9$ = \gap{...............................},    $10^{-5}$=\gap{......................}\\
+\underline{Exemples :} $10^9$ = 1 000 000 000,    $10^{-5}$=0,000 01\\
 
 \subsection{Opérations}
 \begin{tcolorbox}[colback=red!5!white,colframe=red!75!black,title=\textbf{Règles de calculs des puissances de 10}]
@@ -42,7 +42,7 @@ Soit $a$ et $b$ deux nombres réels.
 \end{tcolorbox}
 \underline{Effectuer les calculs suivants :}
 \begin{align*}
-    10^{30} \times 10^{50} &= \text{\gap{...............}} & \frac{10^{2033}}{10^{10}} &= \text{\gap{...............}} & \frac{10^2}{10^8}\times 10^5 &= \text{\gap{...............}}
+    10^{30} \times 10^{50} &= 10^{30+50}=10^{80} & \frac{10^{2033}}{10^{10}} &= 10^{2033-10} = 10^{2023} & \frac{10^2}{10^8}\times 10^5 &= 10^{2-8+5} = 10^{-1}
 \end{align*}
 \subsection{Notation scientifique}
 
@@ -56,8 +56,8 @@ avec $n$ un nombre entier relatif et $a$ un nombre décimal tel que : $1< a <10$
 \end{tcolorbox}
 \underline{Exemples :}
 \begin{itemize}
-    \item la masse $M_{L}$ de la Lune vaut $M_{Lune}=734$ $800$ $000$ $000$ $000$ $000$ $000$~kg et s'écrit donc plus simplement : $M_L=$\gap{....................}~kg
-    \item La taille $d$ d'une molécule d'eau est de  $d=0,000$ $000$ $003$ $4$~m, soit en écriture scientifique : $d=$\gap{......................}~m
+    \item la masse $M_{L}$ de la Lune vaut $M_{Lune}=734$ $800$ $000$ $000$ $000$ $000$ $000$~kg et s'écrit donc plus simplement : $M_L=7,348\times 10^{20}$~kg
+    \item La taille $d$ d'une molécule d'eau est de  $d=0,000$ $000$ $003$ $4$~m, soit en écriture scientifique : $d=3,4\times10^{-9}$~m
 \end{itemize}
 
 \subsection{Ordre de grandeur}
@@ -67,17 +67,17 @@ L'ordre de grandeur d'un nombre et la puissance de 10 la plus proche de ce nombr
 \end{tcolorbox}
 \underline{Exemples :}
 \begin{itemize}
-    \item Ordre de grandeur de 30 000 = \gap{...........}
-    \item Ordre de grandeur de 0,000 007 = \gap{...........}
-    \item Ordre de grandeur de 8 700 000 = \gap{...........}
-    \item Ordre de grandeur de 0,000 256 = \gap{...........}
+    \item Ordre de grandeur de 30 000 = 10$^4$
+    \item Ordre de grandeur de 0,000 007 = 10$^{-5}$
+    \item Ordre de grandeur de 8 700 000 = 10$^6$
+    \item Ordre de grandeur de 0,000 256 = 10$^{-4}$
 \end{itemize}
 
 \section{Unités}
 \subsection{Les unités du système international SI}
 Depuis 2019, la communauté scientifique internationale, à travers la "Conférence générale des poids et mesures", a adopté un système d'unités universel. Leur valeur sont définies à partir de 7 constantes universelles dont les valeurs exactes ont été définitivement "fixées" en Novembre 2018 (\textit{source Wikipédia}). 
 \begin{figure}[!h]
-    \centering\includegraphics[scale=0.4]{Images/Fiche_Methode1/SI_Logo_with_defining_constants.png}
+    \centering\includegraphics[scale=0.4]{Images/Methodo/Fiche_Methode1/SI_Logo_with_defining_constants.png}
     \caption{Logo du système SI. }
     \label{fig:Syteme_SI}
 \end{figure}
@@ -105,38 +105,38 @@ Intensité lumineuse & candela & cd & luxmètre \\
 Il est très souvent utile et agréable de remplacer l’écriture scientifique d’un nombre par \textbf{un nombre écrit sans puissance de 10 suivi d'un multiple ou sous-multiple de l'unité du nombre}.
 \begin{table}[!h]
     \centering
-    \begin{tabularx}{\linewidth}{|c|c|c|}
+    \begin{tabular}{|C{0.15}|c|c|}
     \hline
     Multiple ou sous-multiple & Facteur par lequel l'unité est multipliée & Exemple typique \\ 
     \hline 
     Multiple & 1 000 000 000 000 = $10^{12}$ & Téraoctet (To) \\
     \hline
-    Multiple & 1 000 000 000 = $10^{9}$ & \\
+    Multiple & 1 000 000 000 = $10^{9}$ & Gigaoctet (Go)\\
     \hline
-    Multiple & 1 000 000 = $10^{6}$ & \\
+    Multiple & 1 000 000 = $10^{6}$ & Mégajoule (MJ)\\
     \hline
-    Multiple & 1 000 = $10^{3}$ & \\
+    Multiple & 1 000 = $10^{3}$ & kilogramme (kg)\\
     \hline
-    Multiple & 100 = $10^{2}$ & \\
+    Multiple & 100 = $10^{2}$ & hectomètre (hm)\\
     \hline
-    Multiple & 10 = $10^{1}$ &  \\
+    Multiple & 10 = $10^{1}$ &  decalitre (daL)\\
     \hline
-    Sous-Multiple & 0,1 = $10^{-1}$ &  \\
+    Sous-Multiple & 0,1 = $10^{-1}$ & decimètre (dm) \\
     \hline
-    Sous-Multiple & 0, 01 = $10^{-2}$ &  \\
+    Sous-Multiple & 0, 01 = $10^{-2}$ & centilitre (cL) \\
     \hline
-    Sous-Multiple & 0, 001 = $10^{-3}$ &  \\
+    Sous-Multiple & 0, 001 = $10^{-3}$ & milliseconde (ms) \\
     
     \hline
-    Sous-Multiple & 0, 000 001 = $10^{-6}$ & \\
+    Sous-Multiple & 0, 000 001 = $10^{-6}$ & micromètre ($\mu$m)\\
     \hline
-    Sous-Multiple & 0, 000 000 001 = $10^{-9}$ &  \\
+    Sous-Multiple & 0, 000 000 001 = $10^{-9}$ & nanoseconde (ns) \\
     \hline
-    Sous-Multiple & 0, 000 000 000 001 = $10^{-12}$ & \\
+    Sous-Multiple & 0, 000 000 000 001 = $10^{-12}$ & picomètre (pm)\\
     \hline
     Sous-Multiple & 0, 000 000 000 000 001 = $10^{-15}$ & femtomètre (fm)\\
     \hline
-    \end{tabularx}
+    \end{tabular}
     
     \caption{Tableaux des préfixes des multiples et sous multiples}
     \label{tab:chap1_multiples}
@@ -154,7 +154,7 @@ Exemples :
 \begin{equation*}
     c =\underbrace{2,99 792458}_{\text{9 chiffres significatifs}}\times 10^8~\text{m.s}^{-1}
 \end{equation*}
-\item 0,002 3 possède \gap{.....} chiffres significatifs car il s'écrit : 
+\item 0,002 3 possède 2 chiffres significatifs car il s'écrit : $2,3\times10^{-3}$ en notation scientifique.
 \end{itemize}
 
 \begin{tcolorbox}[colback=red!5!white,colframe=red!75!black,title=Règles à retenir sur les chiffres significatifs]
@@ -162,12 +162,6 @@ Le résultat d'une somme, différence, produit ou quotient est écrit avec \text
 \newline
 \newline
 \textit{Exemple : } Calculer le temps $\Delta t$ pour que la lumière parcourt la distance Terre-Soleil $d=150\times 10^{6}$~km. Attention à mettre les grandeurs dans les bonnes unités.
-\newline
-\newline
-\newline
-\newline
-\newline
-\newline
 \end{tcolorbox}
 
 
@@ -206,20 +200,27 @@ La réponse à une question demandant un calcul ne se résume pas l'invocation s
 \section{Règles de sécurité en TP de chimie}
 \subsection{Les règles de sécurité}
 \begin{tcolorbox}[colback=red!5!white,colframe=red!75!black,title=\textbf{En TP de chimie :}]
-\vspace{10cm}
+\begin{itemize}
+    \item Je porte les EPI (Equipements de Protection Individuel) le cas échéant ;
+    \item On ne jette pas les produits chimiques dans le lavabo sauf contre-indication ;
+    \item On ne respire pas, ne mange pas et ne boit pas un produit chimique (même si comestible !) ;
+    \item On fait attention/respecte le matériel ;
+    \item On vérifie les pictogrammes de sécurité lorsqu'on manipule un produit chimique ;
+    \item On range et nettoie son plan de travail à la fin du TP ;
+\end{itemize}
 \end{tcolorbox}
 
 \subsection{Les pictogrammes de sécurité et EPI}
 \begin{figure}[!h]
     \centering
-    \includegraphics[scale=1]{Images/Fiche_Methode1/Pictogrammes.png}
+    \includegraphics[scale=1]{Images/Methodo/Fiche_Methode1/Pictogrammes.png}
     \caption{Pictogrammes de sécurité}
     \label{fig:enter-label}
 \end{figure}
 
 \begin{figure}[!h]
     \centering
-    \includegraphics[scale=0.9]{Images/Fiche_Methode1/picto_gant_blouse_lunette.jpg}
+    \includegraphics[scale=0.9]{Images/Methodo/Fiche_Methode1/picto_gant_blouse_lunette.jpg}
     \caption{Logo des \'{E}quipements de Protection Individuelle (EPI)}
     \label{fig:enter-label}
 \end{figure}
@@ -229,7 +230,7 @@ La réponse à une question demandant un calcul ne se résume pas l'invocation s
 \underline{\textbf{Exemple :}}
 \begin{figure}[!h]
     \centering
-    \includegraphics[scale=0.7]{Images/Fiche_Methode1/Exemple_fiche_toxico.png}
+    \includegraphics[scale=0.7]{Images/Methodo/Fiche_Methode1/Exemple_fiche_toxico.PNG}
     \caption{Exemple d'une fiche de données de sécurité sur)àoi le site de l'INRS.}
     \label{fig:enter-label}
 \end{figure}
