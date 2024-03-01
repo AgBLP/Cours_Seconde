@@ -47,6 +47,13 @@ colbacktitle=red!85!black,enhanced,
 attach boxed title to top center={yshift=-2mm},
 title={#2},#1}
 
+\newtcolorbox{monbilan}[2][]{colback=black!5!white,
+colframe=black!75!black,fonttitle=\bfseries,
+colbacktitle=black!85!white,enhanced,
+attach boxed title to top center={yshift=-2mm},
+title={#2},#1}
+
+
 
 %\newenvironment[1]{Propriete}{\begin{tcolorbox}[colback=red!5!white,colframe=red!75!black,title=\textbf{#1 :}]
 %}
@@ -1001,6 +1008,10 @@ title={#2},#1}
   \frame{\vphantom{$\Frac{1}{10}$} \text{ #1 } }
 }
 
+%% Cadre blanc pour une réponse
+\newcommand{\cadreblanc}[1]{%
+\framebox[\linewidth][c]{%
+\rule{0mm}{#1mm}} \par }
 
 %% papier millimétré
 \newcommand{\papiermillimetre}{
